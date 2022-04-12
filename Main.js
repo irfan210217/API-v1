@@ -21,7 +21,7 @@ router.post('/passwordless/start', async (req, res) => {
     } else {
         axios({
             method: 'post',
-            url: await `${UrlBase.api.url}/${UrlBase.api.path}/authenticate?authIndexType=service&authIndexValue=phoneLogin`,
+            url: await `${UrlBase.api.url}/${UrlBase.api.path}`,
             headers: headers
         })
             .then(() => {
